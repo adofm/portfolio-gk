@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Ganesan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="webgl-container"></div>
+
+    <div class="portfolio-wrapper">
+        <div class="portfolio-container">
+            <!-- Left Side Tiles -->
+            <div class="left-section">
+                <div class="tile tile-profile" id="profile-tile">
+                    <div id="profile-picture" class="profile-image"></div>
+                </div>
+
+                <div class="tile tile-resume" id="resume-tile">
+                    <a href="https://drive.google.com/file/d/1P84pnHdIkx5bFU4XvaZLFp5HMy3UtmyI/view?usp=share_link" target="_blank">
+                        <span class="tile-icon">📃</span>
+                        <span class="tile-text">See resume</span>
+                    </a>
+                </div>
+
+                <div class="tile tile-name" id="name-tile">
+                    <h1 id="name">Karthik Ganesan</h1>
+                    <h2 id="title">Software Engineer - Full Stack Developer</h2>
+                </div>
+
+                <div class="tile tile-contact tile-email" id="email-tile">
+                    <span class="tile-icon">📧</span>
+                    <span class="tile-text" id="email-info">karthik.maniam008@gmail.com</span>
+                </div>
+
+                <div class="tile tile-contact tile-phone" id="phone-tile">
+                    <span class="tile-icon">📞</span>
+                    <span class="tile-text" id="phone-info">+91 8825423584</span>
+                </div>
+
+                <div class="tile tile-contact tile-github">
+                    <a href="https://github.com/adofm" target="_blank">
+                        <span class="tile-icon">🖥️</span>
+                        <span class="tile-text">Github</span>
+                    </a>
+                </div>
+
+                <div class="tile tile-contact tile-linkedin">
+                    <a href="https://www.linkedin.com/in/adofm/" target="_blank">
+                        <span class="tile-icon">🔗</span>
+                        <span class="tile-text">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Divider Line -->
+            <!-- <div class="section-divider"></div> -->
+
+            <!-- Right Side Content -->
+            <div class="right-section">
+                <!-- Tile Grid View -->
+                <div id="tile-grid" class="tile-grid-right active">
+                    <div class="tile tile-overview" data-section="overview">
+                        <div class="tile-icon">👋</div>
+                        <h3 class="tile-title">Overview</h3>
+                        <p class="tile-subtitle">About me</p>
+                    </div>
+
+                    <div class="tile tile-experience" data-section="experience">
+                        <div class="tile-icon">💼</div>
+                        <h3 class="tile-title">Experience</h3>
+                        <p class="tile-subtitle">Professional journey</p>
+                    </div>
+
+                    <div class="tile tile-education" data-section="education">
+                        <div class="tile-icon">🎓</div>
+                        <h3 class="tile-title">Education</h3>
+                        <p class="tile-subtitle">Academic background</p>
+                    </div>
+
+                    <div class="tile tile-projects" data-section="extras">
+                        <div class="tile-icon">🏆</div>
+                        <h3 class="tile-title">Projects</h3>
+                        <p class="tile-subtitle">Hackathons & achievements</p>
+                    </div>
+
+                    <div class="tile tile-skills-small" data-section="skills">
+                        <div class="tile-icon">🚀</div>
+                        <h3 class="tile-title">Skills</h3>
+                    </div>
+                </div>
+
+                <!-- Content View -->
+                <div id="content-view" class="content-view">
+                    <button id="back-button" class="back-button">
+                        <span class="back-icon">←</span> Back
+                    </button>
+                    
+                    <div id="content-container" class="content-container">
+                        <div id="overview" class="section">
+                            <h3>Overview</h3>
+                            <p></p>
+                        </div>
+
+                        <div id="skills" class="section">
+                            <h3>Skills</h3>
+                            <ul></ul>
+                        </div>
+
+                        <div id="education" class="section">
+                            <h3>Education</h3>
+                            <div></div>
+                        </div>
+
+                        <div id="experience" class="section">
+                            <h3>Experience</h3>
+                            <div></div>
+                        </div>
+
+                        <div id="extras" class="section">
+                            <h3>Key Achievements</h3>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="bgcolor.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
